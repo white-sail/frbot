@@ -127,7 +127,7 @@ Har bir tadbir nomini bosib, tafsilotlari va ishtirokchilari haqida ma’lumot o
         `💰 Jami summa: ${total.toLocaleString()} so'm`
       ].join('\n');
   
-      await ctx.reply(table, { parse_mode: 'Markdown' });
+      await ctx.editMessageText(table, { parse_mode: 'Markdown' });
   
     } catch (error) {
       console.error("Xatolik:", error);
