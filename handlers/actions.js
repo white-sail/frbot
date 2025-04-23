@@ -15,4 +15,9 @@ module.exports = function (bot) {
   bot.action('off', (ctx) => {
     ctx.editMessageText('Siz "Off" tugmasini bosdingiz.');
   });
+
+  // Yangi qo'shilgan /salom komandasi
+  bot.command('salom', (ctx) => {
+    ctx.reply('Assalomu alaykum!');
+  });
 };
